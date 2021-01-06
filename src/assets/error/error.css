@@ -1,0 +1,50 @@
+.error{
+    position: fixed;
+    z-index: 2000;
+    display: flex;
+    bottom:10px;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: errorSlide,deleteSlide;   
+    animation-duration: 3s ,2s;
+    animation-delay: 0ms,6s;
+    animation-fill-mode:forwards,forwards;
+    animation-timing-function: ease-in,ease-out;
+    
+}
+.error_message{
+    height:80px;
+    width:300px;
+    background-image: linear-gradient(to right, #c91d12, #a10d03);
+    box-shadow:1px 2px 2px rgb(54, 38, 38);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-weight: bold;
+    opacity: 0.9;
+    border-radius: 30px;
+}
+@keyframes errorSlide {
+
+    0%{
+        left: -3000px;
+    }
+    100%{
+        left:0;
+    }
+    
+}
+@keyframes deleteSlide {
+
+    0%{
+        left: 0;
+    }
+    100%{
+        left:-3000px;
+    }
+    
+}

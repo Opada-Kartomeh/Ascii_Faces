@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-image: linear-gradient(to right, #141e30, #243b55);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  
+}
+.Left{
+  width: 100%;
+  display: flex;
+  flex:1;
+  justify-content: center;
+}
+
+.logo {
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1,1.07);
+}
+
+
+@media (max-width: 500px) {
+    .Left {
+      justify-content: center;
+    }
+  }

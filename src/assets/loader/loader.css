@@ -1,0 +1,85 @@
+.lds-ring {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    bottom:0%;
+    width: 100%;
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    justify-content:center;
+    align-items: center;
+    animation :slider forwards  1s ease-in-out;
+    
+  }
+  .lds-ring .animated_loader {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 3px solid;
+    border-radius: 50%;
+    animation: lds-ring  infinite 1s  ease-in-out;
+    border-color: #FEBB0B transparent transparent transparent;
+  }
+  
+  
+  .lds-ring .animated_loader_first {
+    animation-delay: -0.45s;
+  }
+  .lds-ring .animated_loader_second {
+    animation-delay: -0.3s;
+  }
+  .lds-ring .animated_loader_third {
+    animation-delay: -0.15s;
+  }
+  .end_Catalog{
+    color: #c9c9c9;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:6px;
+    width:250px;
+    border:2px solid #FEBB0B;
+    border-radius:20px;
+    
+    box-shadow:1px 2px 1px rgba(241, 238, 238, 0.377);
+   
+  }
+  .end_Catalog:hover{
+    animation: EndMassage infinite 1s  ease-in-out;
+    transition : all 1s ease-in-out;
+  }
+  @keyframes EndMassage{
+    0%{
+      transform: translateX(-20px);
+    }
+    50%{
+      transform: translateX(20px);
+    }
+    100%{
+      transform: translateX(-20px);
+    }
+    
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes slider{
+      0%{
+         height: 0px;
+        
+      }
+      100%{
+        height:60px;
+       
+        display:none
+    }
+  }
+  

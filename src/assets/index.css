@@ -1,0 +1,27 @@
+@import url("./card/card.css");
+@import url("./error/error.css");
+@import url("./Filter/Filter.css");
+@import url("./header/header.css");
+@import url("./loader/loader.css");
+@import url("./modal/modal.css");
+@import url("./App.css");
+body {
+  margin: 0;
+  
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.containerAll{
+ 
+  position: relative;
+  min-height: 93vh;
+}
